@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Inputs</title>
+</head>
+<body>
+
+    <h2>This is Form Tutorial</h2>
+    
+    <form method="get">
+        <label for="name">Name</label>
+        <div>
+            <input type="text" name="myName" id="name" required>
+        </div>
+        <br>
+        <label for="role">Role</label>
+        <div>
+             <input type="text" name="myRole" id="role" required>
+        </div>
+        <br>
+        <label for="email">Email</label>
+        <div>
+             <input type="email" name="myEmail" id="email" required>
+        </div>
+        <br>
+        <label for="date">Date</label>
+        <div>
+             <input type="date" id="date" name="myDate"  required>
+        </div>
+        <br>
+        <label for="bonus">Bonus</label>
+        <div>
+            <input type="number"id="bonus" name="myNum"  required>
+        </div> 
+        <br>
+        <label for="checkbox">Are you eligible?</label>
+        <div>
+             <input type="checkbox" name="myCheckBox" id="checkbox" required>
+        </div>
+        <br>
+        <label for="gender">Gender</label>
+        <div>
+            Male <input type="radio" name="myGender" id="gender"  required>
+            Female <input type="radio" name="myGender" id="gender" required>
+            Other <input type="radio" name="myGender" id="gender" required>
+        </div>
+        <br>
+        <div>
+            <label for="car">Car</label>
+           <select name="Car" id="car">
+            <option selected value="">Swift </option>
+            <option value="">HiJet</option>
+           </select>
+
+        </div>
+        <br>
+        <label for="Mymsg">Write for some message</label>
+        <div>
+             <br> 
+            <textarea name="Mymsg" id="Mymsg" cols="30" rows="10" required></textarea>
+        </div>
+        <br>
+        
+        <div>
+            <label for="files">File Choose</label>
+            <input type="file" name="file" id="files">
+        </div>
+        <br> <br>
+        <div>
+            <input type="submit" value="Submit Now"> &nbsp; &nbsp;
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+
+</body>
+</html>
