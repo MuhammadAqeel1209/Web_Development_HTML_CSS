@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Properties</title>
+    <style>
+
+        /* Types Of Position -- Static (default) absolute relative fixed sticky         */
+            /*1 sticky position means box stuck in the page and not affect by moving slides bar  */
+            /* 2 relative position means relation with its normal positions  */
+            /* 3 absolute position means relation with its parent positions  */
+            /* 4 fixed position means box not move when scroll bar moves  */
+
+
+
+        .contain{
+            border: 3px solid black;
+            background-color: khaki;
+            height: 3444px;
+        }
+
+        .box{
+           
+            border: 3px solid red;
+            height: 150px;
+            width: 150px;
+            margin: 3px;
+            display: inline-block;
+        }
+
+        #box1{
+            position: static; /*By Default */
+        }
+
+        #box3{
+            /* position: relative;
+            top  : 34px;
+            left : 34px */
+            color: none;
+        }
+
+        #box2{
+            
+            position: sticky;
+            /* top  : 34px;
+            left : 234px */
+            top: 23px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="contain">
+    <div class="box" id="box1">One</div>
+    <div class="box" id="box2">Two</div>
+    <div class="box" id="box3">Three</div>
+    <div class="box" id="box4">Four</div>
+</div>
+
+</body>
+</html>

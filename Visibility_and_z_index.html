@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Z-Index Property In CSS</title>
+
+    <!-- Visiblities IN CSS
+    1) Visible -- 👉 By Default
+    2) Hidden -- 👉 Remove but place occupied
+     -->
+
+      <!-- z Index not work on Static Default Positions 
+            and only work absolute relative sticky fixed  -->
+
+
+    <style>
+        .box {
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+        #box1 {
+            position: relative;
+            top : 23px;
+            background-color: greenyellow;
+            z-index: 23px;
+        }
+        #box2 {
+            /* visibility: hidden; */
+            /* Dispaly = None -- 👉 remove the element and also place   */
+            /* display: none; */ 
+            
+            position: relative;
+            top:24px;
+            
+            z-index: 27px;
+             background-color: rebeccapurple;
+        }
+        #box3 {
+            background-color: blue;
+        }
+        #box4 {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+
+</body>
+</html>

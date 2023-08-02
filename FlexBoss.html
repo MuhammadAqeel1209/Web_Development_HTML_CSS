@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box Tutorial</title>
+
+    <style>
+        .container{
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+
+        /* Flex Properties for flex Container  👇👇👇*/
+
+            /* flex-direction: row; Dy Default row  */
+            /* flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+
+            /* flex-wrap: nowrap;  /* Dy Default */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse;  */
+
+
+                    /* Direction And Wrap  */
+            /* flex-flow: row-reverse wrap;  */
+
+            /* justify-content: center ;
+            justify-content: space-between;
+            /* justify-content: space-evenly; */
+            /* justify-content: space-around;  */
+
+            /* align-items: center;
+            align-items: flex-end;
+            align-items: flex-start; /* By Default*/
+            /* align-items: stretch;  */
+            
+        }
+
+        .item{
+            width: 100px;
+            height: 150px;
+            background-color: tomato;
+            margin: 10px;
+            padding: 5px;
+            border: 2px solid greenyellow;
+        }
+
+        #item1{
+            /* Flex properties for flex item  */
+            /* order: 2;  */
+            /* flex-grow: 2;
+            flex-shrink: 2; */
+
+            /* flex : grow shrink basis  */
+            flex: 3 3 244px;
+        }
+        #item2{
+            /* flex-grow: 3;
+            flex-shrink: 3; */
+            /*Flex Direction  row set When width set by Flex Basis */
+            /*Flex Direction  column set When height set by Flex Basis */
+            flex-basis: 320px; 
+        }
+        #item3{
+            order: 40;
+        }
+
+    </style>
+</head>
+<body>
+<!-- main axis -- horizontal
+cross axis -- vertical
+flex item horizontal main size
+flex item vertical cross size -->
+
+<h1>This Flex Box Tutorial</h1>
+<div class="container">
+    <div class="item" id="item1">First Box</div>
+    <div class="item" id="item2">Second Box</div>
+    <div class="item" id="item3">Third Box</div>
+    <!-- <div class="item" id="item4"> Fourth Box</div>
+    <div class="item" id="item5">Fifth Box</div>
+    <div class="item" id="item6">Sixth Box</div> -->
+</div>
+
+</body>
+</html>
