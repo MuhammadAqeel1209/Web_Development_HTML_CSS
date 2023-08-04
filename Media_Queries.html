@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+
+    <style>
+        .box{
+            background-color: blueviolet;
+            font-size: 24px;
+            text-align: center;
+            display: none;
+        }
+
+        @media (max-width:300px){
+            #box1{
+                display: block;
+                background-color: cyan;
+            }
+        }
+
+        @media (max-width:500px) and (min-width:300px)
+        {
+            #box2{
+                display: block;
+                background-color: cadetblue;
+            }
+        }
+
+        @media (max-width:800px) and (min-width:500px)
+        {
+            #box3{
+                display: block;
+                background-color: brown;
+            }
+        }
+
+        @media  (min-width:800px)
+        {
+            #box4{
+                display: block;
+                background-color: yellowgreen
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="box" id="box1">Main eik I Phone ho</div>
+    <div class="box" id="box2"> Main eik Tablet ho</div>
+    <div class="box" id="box3"> Main eik Computer ho</div>
+    <div class="box" id="box4"> Main eik Wide Screen Computer ho</div>
+
+</body>
+</html>
